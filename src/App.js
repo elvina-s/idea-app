@@ -15,7 +15,7 @@ function App() {
   }
 
   const displayAnIdea = () => {
-    return <h3 style={{display:"block"}}>{anIdea}</h3>;
+    return <h3 style={{display: "block"}}>{anIdea}</h3>;
   }
 
   const bothFunctions = fetchAnIdea.bind(this, displayAnIdea);
