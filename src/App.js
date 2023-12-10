@@ -12,7 +12,7 @@ function App() {
     const response = await fetch("https://www.boredapi.com/api/activity/");
     const data = await response.json();
     setAnIdea(data.activity)
-    const h3 = document.querySelector(h3);
+    const h3 = document.querySelector("h3");
     h3.style.display="block";
   }
 
