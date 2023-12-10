@@ -16,7 +16,7 @@ function App() {
 
   const displayAnIdea = () => {
     const h3 = document.querySelector("h3");
-    h3.style.display="block";
+    style = {display: "block"};
   }
 
   const bothFunctions = fetchAnIdea.bind(this, displayAnIdea);
