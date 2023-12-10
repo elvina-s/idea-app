@@ -12,15 +12,20 @@ function App() {
     const response = await fetch("https://www.boredapi.com/api/activity/");
     const data = await response.json();
     setAnIdea(data.activity)
-    /*const h3 = document.querySelector("h3");
-    h3.style.display="block";*/
   }
+
+  const displayAnIdea = () => {
+    const h3 = document.querySelector("h3");
+    h3.style.display="block";
+  }
+
+  const bothFunctions = fetchAnIdea.bind(this, displayAnIdea);
 
   return ( <div>
     <div className="container">
       <h1>Bored and don't know what to do?</h1>
       <h2>Click the button below to get an idea!</h2>
-      <button onClick={fetchAnIdea}>Get an idea</button>
+      <button onClick={bothFunctions}>Get an idea</button>
       <h3>{anIdea}</h3>
     </div>
   </div>
