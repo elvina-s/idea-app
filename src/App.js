@@ -10,13 +10,6 @@ function App() {
     setAnIdea(data.activity)
   }
 
-  /*const displayAnIdea = () => {
-    return <h3 style={{display: "block"}}>{anIdea}</h3>;
-  }
-*/
-
-//  const bothFunctions = fetchAnIdea.bind(this, displayAnIdea);
-
   return ( <div>
     <div className="container">
       <h1>Bored and don't know what to do?</h1>
